@@ -11,6 +11,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 try {
   $connection = new PDO('mysql:host=localhost;dbname='.DB_NAME, DB_USER, DB_PASS);
+  $connection->exec("SET sql_mode = '';");
+  $connection->exec("SET sql_mode = (SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));");
 }
 catch (PDOExeption $e) {
   echo json_encode([
@@ -158,9 +160,15 @@ if ($action === 'get') {
   FROM account_product
   WHERE product_cnt_account = 320
     AND product_hld_holder = 13161
+    AND (
+      product_mbr_member IN (45711,45748, 45922, 46108, 46109, 46110, 46112, 46113, 46114, 46115, 46116, 46117, 46119, 46120, 46129, 46165, 60874, 60912, 60914, 61038, 61067, 61288)
+      OR
+      product_uid_id IN (NULL)
+    )
     $product_chr_link
 
     AND NULLIF(product_img_image, '') IS NOT NULL
+    AND (product_dat_checked  >= NOW() - INTERVAL 5 DAY OR IFNULL(product_enm_wikimart, 'NO') = 'YES')
   
   GROUP BY product_set_group1
   LIMIT 20

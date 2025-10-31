@@ -1,0 +1,62 @@
+/* Black */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ultrabold */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Ultrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ultralight */
+@font-face {
+  font-family: 'PP Neue Machina';
+  src: url('/public/fonts/pp-neue-machina/NeueMachina-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
